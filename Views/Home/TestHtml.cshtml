@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<!-- html/head tags removed for brevity -->
+<body>
+    <h1>These are cats:</h1>
+@{
+    var StringList = new List<string>
+    {
+        "Garfield",
+        "Oliver",
+        "Thea",
+        "Lil G"
+    };
+        
+    foreach(var word in StringList)
+    {
+        <div>
+            <p>@word</p>
+            @if(word.Length > 5)
+            {
+                 <p>@word</p>
+            }
+            {
+                <p>@word</p>
+        
+       </div>
+    }
+}
+</body>
+
+</html>
